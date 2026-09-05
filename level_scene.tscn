@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://djio2qt6e5a01"]
 
 [ext_resource type="Texture2D" uid="uid://d0lxnd4ehgety" path="res://Godot Stardance Aerospace Game Level Scene Background.png" id="1_187gu"]
-[ext_resource type="Texture2D" path="res://lives icon.png" id="2_3mivm"]
 
 [node name="Level Scene" type="Node2D" unique_id=996411165]
 
@@ -13,9 +12,9 @@ texture = ExtResource("1_187gu")
 
 [node name="LifeContainer" type="HBoxContainer" parent="." unique_id=1971804143]
 offset_left = 240.0
-offset_top = 256.0
+offset_top = 332.04004
 offset_right = 10256.0
-offset_bottom = 2256.0
+offset_bottom = 1332.04
 scale = Vector2(0.07326175, 0.07604002)
 
 [node name="Life1" type="TextureRect" parent="LifeContainer" unique_id=1577681789]
@@ -23,19 +22,15 @@ layout_mode = 2
 
 [node name="Life2" type="TextureRect" parent="LifeContainer" unique_id=1742667623]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
 
 [node name="Life3" type="TextureRect" parent="LifeContainer" unique_id=801909408]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
 
 [node name="Life4" type="TextureRect" parent="LifeContainer" unique_id=537964317]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
 
 [node name="Life5" type="TextureRect" parent="LifeContainer" unique_id=1280833814]
 layout_mode = 2
-texture = ExtResource("2_3mivm")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=618829883]
 offset_left = 473.0
