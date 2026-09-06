@@ -1,53 +1,61 @@
 [gd_scene format=3 uid="uid://djio2qt6e5a01"]
 
-[ext_resource type="Texture2D" uid="uid://d0lxnd4ehgety" path="res://Godot Stardance Aerospace Game Level Scene Background.png" id="1_187gu"]
+[ext_resource type="Script" uid="uid://cqi7006l1e0xd" path="res://timer_scene.gd" id="1_3mivm"]
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="2_3mivm"]
+[ext_resource type="Texture2D" uid="uid://se1gcir17m6p" path="res://lives icon (3).png" id="3_lwxgr"]
 
 [node name="Level Scene" type="Node2D" unique_id=996411165]
+script = ExtResource("1_3mivm")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1992501250]
 offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.60008043, 0.6002879)
-texture = ExtResource("1_187gu")
+texture = ExtResource("2_3mivm")
 
 [node name="LifeContainer" type="HBoxContainer" parent="." unique_id=1971804143]
-offset_left = 240.0
-offset_top = 332.04004
-offset_right = 10256.0
-offset_bottom = 1332.04
-scale = Vector2(0.07326175, 0.07604002)
+offset_left = 167.00003
+offset_top = 288.0
+offset_right = 5183.0
+offset_bottom = 1288.0
+scale = Vector2(0.16827169, 0.17134783)
 
 [node name="Life1" type="TextureRect" parent="LifeContainer" unique_id=1577681789]
 layout_mode = 2
+texture = ExtResource("3_lwxgr")
 
 [node name="Life2" type="TextureRect" parent="LifeContainer" unique_id=1742667623]
 layout_mode = 2
+texture = ExtResource("3_lwxgr")
 
 [node name="Life3" type="TextureRect" parent="LifeContainer" unique_id=801909408]
 layout_mode = 2
+texture = ExtResource("3_lwxgr")
 
 [node name="Life4" type="TextureRect" parent="LifeContainer" unique_id=537964317]
 layout_mode = 2
+texture = ExtResource("3_lwxgr")
 
 [node name="Life5" type="TextureRect" parent="LifeContainer" unique_id=1280833814]
 layout_mode = 2
+texture = ExtResource("3_lwxgr")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=618829883]
-offset_left = 473.0
-offset_top = 76.0
-offset_right = 705.0
-offset_bottom = 158.0
+offset_left = 474.0
+offset_top = 105.0
+offset_right = 706.0
+offset_bottom = 187.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/normal_font_size = 56
 text = "Level: #"
 
-[node name="Time" type="RichTextLabel" parent="." unique_id=697678967]
-offset_left = 532.0
-offset_top = 158.0
-offset_right = 625.0
-offset_bottom = 241.0
+[node name="Timer" type="RichTextLabel" parent="." unique_id=697678967]
+offset_left = 536.0
+offset_top = 188.0
+offset_right = 629.0
+offset_bottom = 271.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
