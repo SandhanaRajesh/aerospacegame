@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://c040a6h6nsl5n"]
+
+[ext_resource type="Script" uid="uid://c5c8x6pyat263" path="res://minigame_2.gd" id="1_3qiw4"]
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_vdqgs"]
+[ext_resource type="Texture2D" uid="uid://bc3jbvk10huua" path="res://mars.png" id="2_2425y"]
+[ext_resource type="Script" uid="uid://clxmqt1u3yn48" path="res://button_1.gd" id="3_5x31c"]
+[ext_resource type="PackedScene" uid="uid://0vt4jkcd2r1u" path="res://minigame_timer_scene.tscn" id="4_3qiw4"]
+[ext_resource type="Texture2D" uid="uid://2ijqugpcltqt" path="res://jupiter.png" id="5_u32kt"]
+[ext_resource type="Texture2D" uid="uid://b8dc2p8uw1xdi" path="res://neptune.png" id="6_v84ot"]
+[ext_resource type="Texture2D" uid="uid://bb2gwgcutgqyl" path="res://purpleplanet.png" id="7_38v6o"]
+
+[node name="Minigame_2" type="Node2D" unique_id=907577122]
+script = ExtResource("1_3qiw4")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=430223412]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1365247028]
+offset_right = 960.0
+offset_bottom = 540.0
+scale = Vector2(1.201069, 1.2018212)
+texture = ExtResource("1_vdqgs")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=225442814]
+offset_left = 104.0
+offset_top = 134.0
+offset_right = 1104.0
+offset_bottom = 1134.0
+scale = Vector2(0.11999941, 0.11999787)
+texture_normal = ExtResource("2_2425y")
+script = ExtResource("3_5x31c")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=904488373]
+offset_left = 390.00003
+offset_top = 305.0
+offset_right = 1390.0
+offset_bottom = 1305.0
+scale = Vector2(0.11999941, 0.11999787)
+texture_normal = ExtResource("5_u32kt")
+script = ExtResource("3_5x31c")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=444580255]
+offset_left = 794.0
+offset_top = 61.0
+offset_right = 1794.0
+offset_bottom = 1061.0
+scale = Vector2(0.11999941, 0.11999787)
+texture_normal = ExtResource("6_v84ot")
+script = ExtResource("3_5x31c")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1999547470]
+offset_left = 974.00006
+offset_top = 504.00003
+offset_right = 1974.0
+offset_bottom = 1504.0
+scale = Vector2(0.11999941, 0.11999787)
+texture_normal = ExtResource("7_38v6o")
+script = ExtResource("3_5x31c")
+
+[node name="ThemedTimer" parent="." unique_id=695340111 instance=ExtResource("4_3qiw4")]
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]
