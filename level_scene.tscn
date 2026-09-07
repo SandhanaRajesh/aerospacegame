@@ -14,10 +14,10 @@ scale = Vector2(0.60008043, 0.6002879)
 texture = ExtResource("2_3mivm")
 
 [node name="LifeContainer" type="HBoxContainer" parent="." unique_id=1971804143]
-offset_left = 167.00003
-offset_top = 288.0
-offset_right = 5183.0
-offset_bottom = 1288.0
+offset_left = 162.0
+offset_top = 279.0
+offset_right = 5231.1826
+offset_bottom = 1279.0
 scale = Vector2(0.16827169, 0.17134783)
 
 [node name="Life1" type="TextureRect" parent="LifeContainer" unique_id=1577681789]

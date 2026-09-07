@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bmouru2786pex"]
+
+[ext_resource type="Texture2D" uid="uid://d0lxnd4ehgety" path="res://Godot Stardance Aerospace Game Level Scene Background.png" id="1_hthqy"]
+[ext_resource type="Texture2D" uid="uid://pcwje5wbqcl8" path="res://Character (1).png" id="2_4wsyg"]
+
+[sub_resource type="Animation" id="Animation_yxos6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(395, 354)]
+}
+
+[sub_resource type="Animation" id="Animation_ebj7f"]
+resource_name = "dancing"
+length = 1.33
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33, 0.66, 0.99, 1.33),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(395, 354), Vector2(429.99997, 335), Vector2(383, 357), Vector2(332.99997, 335.00003), Vector2(378, 348)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gdr0l"]
+_data = {
+&"RESET": SubResource("Animation_yxos6"),
+&"dancing": SubResource("Animation_ebj7f")
+}
+
+[node name="WinnerScene" type="Node2D" unique_id=1645485635]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1632250079]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6008875, 0.60177827)
+texture = ExtResource("1_hthqy")
+
+[node name="CharacterNode" type="Node2D" parent="." unique_id=1489920706]
+
+[node name="Character" type="TextureRect" parent="CharacterNode" unique_id=572240799]
+offset_left = 395.0
+offset_top = 354.0
+offset_right = 1395.0
+offset_bottom = 1354.0
+scale = Vector2(0.33743066, 0.29858914)
+texture = ExtResource("2_4wsyg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterNode" unique_id=2038202958]
+root_node = NodePath("../Character")
+libraries/ = SubResource("AnimationLibrary_gdr0l")
+autoplay = &"dancing"
+
+[node name="Congratulations" type="RichTextLabel" parent="." unique_id=1677902797]
+offset_left = 25.0
+offset_top = 60.0
+offset_right = 1147.0
+offset_bottom = 219.0
+theme_override_colors/font_outline_color = Color(0.6081283, 0.54647154, 0.12237842, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/normal_font_size = 110
+text = "CONGRATULATIONS!"
+
+[node name="You successfully completed all the minigames!" type="RichTextLabel" parent="." unique_id=1917550423]
+offset_left = 19.0
+offset_top = 209.0
+offset_right = 1164.0
+offset_bottom = 289.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 50
+text = "You successfully completed all the minigames!"
