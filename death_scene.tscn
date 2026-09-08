@@ -63,3 +63,23 @@ texture = ExtResource("2_y2fqr")
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_xya4v")
 autoplay = &"failed"
+
+[node name="Oh no!" type="RichTextLabel" parent="." unique_id=701087283]
+offset_left = 332.0
+offset_top = 47.0
+offset_right = 883.0
+offset_bottom = 263.0
+theme_override_colors/font_outline_color = Color(0.6431373, 0.5803922, 0.019607844, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/normal_font_size = 156
+text = "Oh No!"
+
+[node name="you lose" type="RichTextLabel" parent="." unique_id=333958796]
+offset_left = 342.0
+offset_top = 234.0
+offset_right = 869.0
+offset_bottom = 305.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 48
+text = "You lost all your lives!"
