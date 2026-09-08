@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bfr1g7vqpugud"]
+
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_6crsp"]
+
+[node name="Minigame1InfoScreen" type="Node2D" unique_id=913125668]
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=2123987834]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1011163588]
+offset_right = 960.0
+offset_bottom = 540.0
+scale = Vector2(1.201069, 1.2018212)
+texture = ExtResource("1_6crsp")
+
+[node name="GotItButton" type="Button" parent="." unique_id=761488880]
+offset_left = 366.0
+offset_top = 510.0
+offset_right = 771.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "GOT IT!"
+
+[node name="PlanetaryScientistText" type="RichTextLabel" parent="." unique_id=583341393]
+offset_left = 35.0
+offset_top = 123.0
+offset_right = 1125.0
+offset_bottom = 253.0
+theme_override_font_sizes/normal_font_size = 25
+text = "In this minigame, you will be a planetary scientist exploring four new celestial bodies that you have recently detected! Maneuver onto the platforms to land probes onto these objects to thoroughly study them."
+
+[node name="MissionObjective" type="RichTextLabel" parent="." unique_id=1009637548]
+offset_left = 352.0
+offset_top = 48.0
+offset_right = 864.0
+offset_bottom = 130.0
+theme_override_font_sizes/normal_font_size = 50
+text = "MISSION OBJECTIVE"
+
+[node name="CareerSpotlight" type="RichTextLabel" parent="." unique_id=643438757]
+offset_left = 352.0
+offset_top = 254.0
+offset_right = 833.0
+offset_bottom = 336.0
+theme_override_font_sizes/normal_font_size = 50
+text = "CAREER SPOTLIGHT"
+
+[node name="PlanetaryScientistText2" type="RichTextLabel" parent="." unique_id=385718171]
+offset_left = 27.0
+offset_top = 336.0
+offset_right = 1139.0
+offset_bottom = 519.0
+theme_override_font_sizes/normal_font_size = 25
+text = "So what do Planetary Scientists in real life do? Planetary scientists aim to explore the celestial bodies beyond Earth by studying their internal compositions and geologies to understand their planetary histories and formation, and possibility of habitability. Planetary scientists work closely with spacecraft, which they deploy to land on or orbit near planets or other objects. 
+"

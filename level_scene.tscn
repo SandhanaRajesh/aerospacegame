@@ -41,23 +41,12 @@ layout_mode = 2
 texture = ExtResource("3_lwxgr")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=618829883]
-offset_left = 474.0
-offset_top = 105.0
-offset_right = 706.0
-offset_bottom = 187.0
+offset_left = 476.0
+offset_top = 164.0
+offset_right = 708.0
+offset_bottom = 246.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/normal_font_size = 56
 text = "Level: #"
-
-[node name="Timer" type="RichTextLabel" parent="." unique_id=697678967]
-offset_left = 536.0
-offset_top = 188.0
-offset_right = 629.0
-offset_bottom = 271.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/normal_font_size = 56
-text = "0.0"
