@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cgu566xbblbh"]
+
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_tjbcc"]
+
+[node name="Minigame2InfoScreen" type="Node2D" unique_id=936735713]
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=24947259]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=2056672971]
+offset_right = 960.0
+offset_bottom = 540.0
+scale = Vector2(1.201069, 1.2018212)
+texture = ExtResource("1_tjbcc")
+
+[node name="GotItButton" type="Button" parent="." unique_id=50250932]
+offset_left = 366.0
+offset_top = 510.0
+offset_right = 771.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "GOT IT!"
+
+[node name="MissionObjective" type="RichTextLabel" parent="." unique_id=1209154067]
+offset_left = 352.0
+offset_top = 48.0
+offset_right = 864.0
+offset_bottom = 130.0
+theme_override_font_sizes/normal_font_size = 50
+text = "MISSION OBJECTIVE"
+
+[node name="ExoplanetScientistText" type="RichTextLabel" parent="." unique_id=162935951]
+offset_left = 29.0
+offset_top = 129.0
+offset_right = 1119.0
+offset_bottom = 259.0
+theme_override_font_sizes/normal_font_size = 25
+text = "In this minigame, you will be an exoplanet researcher who just found 4 new exoplanets! However, you’ve determined that none of these planets are suitable for life. :( Click all 4 planets as quickly as possible to remove them from your dataset. "
+
+[node name="CareerSpotlight" type="RichTextLabel" parent="." unique_id=653160312]
+offset_left = 352.0
+offset_top = 254.0
+offset_right = 833.0
+offset_bottom = 336.0
+theme_override_font_sizes/normal_font_size = 50
+text = "CAREER SPOTLIGHT"
+
+[node name="ExoplanetScientistText2" type="RichTextLabel" parent="." unique_id=811096692]
+offset_left = 27.0
+offset_top = 337.0
+offset_right = 1139.0
+offset_bottom = 520.0
+theme_override_font_sizes/normal_font_size = 25
+text = "Exoplanet researchers in real life study the billions of planets beyond our solar system. Some specialize in determining habitability of exoplanets by looking at various environmental factors. These scientists work closely with technologies such as satellites, telescopes, imaging systems, optics instruments, and the data that these instruments collect.
+"

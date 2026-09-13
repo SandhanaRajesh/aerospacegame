@@ -48,9 +48,9 @@ text = "CAREER SPOTLIGHT"
 
 [node name="PlanetaryScientistText2" type="RichTextLabel" parent="." unique_id=385718171]
 offset_left = 27.0
-offset_top = 336.0
+offset_top = 337.0
 offset_right = 1139.0
-offset_bottom = 519.0
+offset_bottom = 520.0
 theme_override_font_sizes/normal_font_size = 25
 text = "So what do Planetary Scientists in real life do? Planetary scientists aim to explore the celestial bodies beyond Earth by studying their internal compositions and geologies to understand their planetary histories and formation, and possibility of habitability. Planetary scientists work closely with spacecraft, which they deploy to land on or orbit near planets or other objects. 
 "
