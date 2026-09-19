@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cgu566xbblbh"]
 
 [ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_tjbcc"]
+[ext_resource type="Script" uid="uid://ctt3m3ilbhmyd" path="res://minigame_2_info_screen.gd" id="1_vls6s"]
 
 [node name="Minigame2InfoScreen" type="Node2D" unique_id=936735713]
+script = ExtResource("1_vls6s")
 
 [node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=24947259]
 repeat_size = Vector2(1000, 0)
@@ -54,3 +56,5 @@ offset_bottom = 520.0
 theme_override_font_sizes/normal_font_size = 25
 text = "Exoplanet researchers in real life study the billions of planets beyond our solar system. Some specialize in determining habitability of exoplanets by looking at various environmental factors. These scientists work closely with technologies such as satellites, telescopes, imaging systems, optics instruments, and the data that these instruments collect.
 "
+
+[connection signal="pressed" from="GotItButton" to="." method="_on_got_it_button_pressed"]

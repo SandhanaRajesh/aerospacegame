@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://btdek73p2i3kx"]
+
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_2kxfj"]
+
+[node name="Minigame3InfoScene" type="Node2D" unique_id=1680421681]
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=944481152]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=2139112157]
+offset_right = 960.0
+offset_bottom = 540.0
+scale = Vector2(1.201069, 1.2018212)
+texture = ExtResource("1_2kxfj")
+
+[node name="GotItButton" type="Button" parent="." unique_id=1006265461]
+offset_left = 366.0
+offset_top = 510.0
+offset_right = 771.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "GOT IT!"
+
+[node name="MissionObjective" type="RichTextLabel" parent="." unique_id=2076617084]
+offset_left = 352.0
+offset_top = 48.0
+offset_right = 864.0
+offset_bottom = 130.0
+theme_override_font_sizes/normal_font_size = 50
+text = "MISSION OBJECTIVE"
+
+[node name="SpaceJournalistText" type="RichTextLabel" parent="." unique_id=1343574607]
+offset_left = 29.0
+offset_top = 129.0
+offset_right = 1119.0
+offset_bottom = 259.0
+theme_override_font_sizes/normal_font_size = 25
+text = "In this minigame, you will be a space journalist who has been researching for your latest article. You’ve come across an article, and you must determine its legitimacy by comparing it against your own notes based on official sources. 
+"
+
+[node name="CareerSpotlight" type="RichTextLabel" parent="." unique_id=1226664133]
+offset_left = 352.0
+offset_top = 250.0
+offset_right = 833.0
+offset_bottom = 332.0
+theme_override_font_sizes/normal_font_size = 50
+text = "CAREER SPOTLIGHT"
+
+[node name="SpaceJournalistText2" type="RichTextLabel" parent="." unique_id=1379940858]
+offset_left = 27.0
+offset_top = 321.0
+offset_right = 1139.0
+offset_bottom = 504.0
+theme_override_font_sizes/normal_font_size = 25
+text = "Space journalists report on various space events, from commercial space news to government launches and everything in between. They serve as the bridge between complex scientific data and general media for the public, meaning they have excellent communication and writing skills. Their job is interdisciplinary in that they need to understand the STEM aspects of space news while using humanities skills for their articles. "
