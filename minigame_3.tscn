@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://7k2fsnpdorrf"]
 
 [ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_t3ksd"]
+[ext_resource type="Texture2D" uid="uid://2kn70wmu0bb4" path="res://Journalist's Notes for Godot Minigame 3.png" id="2_gqi5c"]
 
 [node name="Minigame3" type="Node2D" unique_id=542988804]
 
@@ -8,3 +9,11 @@
 offset_right = 1153.0
 offset_bottom = 649.0
 texture = ExtResource("1_t3ksd")
+
+[node name="JournalistNotes" type="TextureRect" parent="." unique_id=193115836]
+offset_left = 648.00006
+offset_top = 23.999998
+offset_right = 1728.0
+offset_bottom = 1374.0
+scale = Vector2(0.44682938, 0.41723612)
+texture = ExtResource("2_gqi5c")
