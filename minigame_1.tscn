@@ -240,10 +240,6 @@ shape = SubResource("CircleShape2D_p4ipy")
 [node name="ThemedTimer" parent="." unique_id=695340111 instance=ExtResource("9_vlki2")]
 
 [connection signal="garlic_collected" from="GarlicNode1" to="." method="_on_garlic_node_1_garlic_collected"]
-[connection signal="garlic_collected" from="GarlicNode1" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="GarlicNode2" to="." method="_on_garlic_node_2_garlic_collected"]
-[connection signal="garlic_collected" from="GarlicNode2" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="GarlicNode3" to="." method="_on_garlic_node_3_garlic_collected"]
-[connection signal="garlic_collected" from="GarlicNode3" to="." method="garlic_collect"]
 [connection signal="garlic_collected" from="GarlicNode4" to="." method="_on_garlic_node_4_garlic_collected"]
-[connection signal="garlic_collected" from="GarlicNode4" to="." method="garlic_collect"]

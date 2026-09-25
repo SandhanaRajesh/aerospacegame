@@ -5,6 +5,6 @@
 [node name="MinigameTimerScene" type="Node2D" unique_id=695340111]
 script = ExtResource("1_tocy7")
 
-[node name="timer" type="RichTextLabel" parent="." unique_id=1147040834]
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1147040834]
 offset_right = 40.0
 offset_bottom = 40.0

@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://7k2fsnpdorrf"]
 
+[ext_resource type="Script" uid="uid://dvu6ny6wmexpm" path="res://minigame_3.gd" id="1_33dbb"]
 [ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_t3ksd"]
 [ext_resource type="Texture2D" uid="uid://2kn70wmu0bb4" path="res://Journalist's Notes for Godot Minigame 3.png" id="2_gqi5c"]
+[ext_resource type="Texture2D" uid="uid://cpt176qxuhkdl" path="res://Journalist's Notes for Godot Minigame 3 (1).png" id="3_5xr8p"]
 
 [node name="Minigame3" type="Node2D" unique_id=542988804]
+script = ExtResource("1_33dbb")
 
 [node name="Background" type="TextureRect" parent="." unique_id=738738117]
 offset_right = 1153.0
@@ -11,9 +14,38 @@ offset_bottom = 649.0
 texture = ExtResource("1_t3ksd")
 
 [node name="JournalistNotes" type="TextureRect" parent="." unique_id=193115836]
-offset_left = 648.00006
-offset_top = 23.999998
-offset_right = 1728.0
-offset_bottom = 1374.0
+offset_left = 638.00006
+offset_top = -23.999998
+offset_right = 1718.0
+offset_bottom = 1326.0
 scale = Vector2(0.44682938, 0.41723612)
 texture = ExtResource("2_gqi5c")
+
+[node name="JournalistNotes2" type="TextureRect" parent="." unique_id=1675703197]
+offset_left = -7.999998
+offset_top = -13.999996
+offset_right = 1260.9407
+offset_bottom = 1615.7726
+scale = Vector2(0.44682938, 0.41723612)
+texture = ExtResource("3_5xr8p")
+
+[node name="Reliable" type="Button" parent="." unique_id=634834724]
+offset_left = 626.0
+offset_top = 534.0
+offset_right = 812.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 28
+text = "RELIABLE
+"
+
+[node name="Unreliable" type="Button" parent="." unique_id=656678241]
+offset_left = 903.0
+offset_top = 533.0
+offset_right = 1089.0
+offset_bottom = 611.0
+theme_override_font_sizes/font_size = 28
+text = "UNRELIABLE
+"
+
+[connection signal="pressed" from="Reliable" to="." method="_on_reliable_pressed"]
+[connection signal="pressed" from="Unreliable" to="." method="_on_unreliable_pressed"]

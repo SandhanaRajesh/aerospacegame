@@ -1,53 +1,45 @@
 extends Node2D
-@onready var themed_timer: Node2D = $ThemedTimer 
-# ^^^ You dragged this in the scene by the way 
 
+@onready var themed_timer: Node2D = $ThemedTimer
 
+var garlic_collected = 0
 
-var garlic_collected = 0 # just keeping track of garlic collected
-var timer_end = false # boolean (true or false) stating whether the timer ended
 
 func _ready() -> void:
+	# Start the 10 second countdown
+	await themed_timer.Timer(10.0)
 
-		#Below you can see that I have a function that I named. I grab a 
-		#function from it that was created in it's script and use `await` to 
-		# tell the script to wait for a signal, or for when a function finshes
+	# Timer has finished
+	if garlic_collected < 4:
+		Global.lives -= 1
+
+	# Move to the next screen
+	move_on()
 
 
-	await themed_timer.Timer(10.0) #accessing a function from this node
-	#after this is compeleted...
-	timer_end = true # now we're saying "oh ye you ran out of time"
+func move_on() -> void:
 
-func _process(delta: float) -> void: # running every frame brochacho
-	
-	if garlic_collected == 3: # the double equals is just an argument asking if it's the same, with "=" it'll give an error
-		if Global.minigames_done > 3: # we access a global script and see how many minigames have been compeleted
-			get_tree().change_scene_to_file("res://scenes/done_screen.tscn") # change current play scene into another, but you make your own finish screen in a later challenge, dont worry abt this rn
-		else:
-			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # go back to the intermission scene
-	
-	if timer_end: # if the timer does end...
-		Global.minigames_done -=1 #go back a minigame
-		Global.lives -= 1 # lose ur lives
-		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn") # back to intermission
-		
+	get_tree().change_scene_to_file("res://level_scene.tscn")
 
-func garlic_collect() -> void: # cool function that you connect to those garlics
-	garlic_collected = garlic_collected +1
-	return
+func garlic_collect() -> void:
+	garlic_collected += 1
+
+	# If all 3 Saturns are collected, move on immediately
+	if garlic_collected == 4:
+		move_on()
 
 
 func _on_garlic_node_1_garlic_collected() -> void:
-	pass # Replace with function body.
+	garlic_collect()
 
 
 func _on_garlic_node_2_garlic_collected() -> void:
-	pass # Replace with function body.
+	garlic_collect()
 
 
 func _on_garlic_node_3_garlic_collected() -> void:
-	pass # Replace with function body.
+	garlic_collect()
 
 
 func _on_garlic_node_4_garlic_collected() -> void:
-	pass # Replace with function body.
+	garlic_collect()
