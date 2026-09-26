@@ -28,6 +28,3 @@ func _process(delta: float) -> void:
 			get_tree().change_scene_to_file("res://death_scene.tscn")
 		else:
 			get_tree().change_scene_to_file("res://level_scene.tscn")
-
-		# DON'T decrease minigames_done
-		get_tree().change_scene_to_file("res://level_scene.tscn")

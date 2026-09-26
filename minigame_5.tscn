@@ -1,3 +1,68 @@
 [gd_scene format=3 uid="uid://t7whlvq5c0if"]
 
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_b3dkm"]
+[ext_resource type="Script" uid="uid://k7hiilld6ouv" path="res://minigame_5.gd" id="1_oyiys"]
+[ext_resource type="Texture2D" uid="uid://3chm6inljkls" path="res://pre-space flight report.png" id="2_1bf3g"]
+[ext_resource type="Texture2D" uid="uid://c06d5i8vytug3" path="res://normal variations sticky note.png" id="3_oyiys"]
+[ext_resource type="Texture2D" uid="uid://dkwihk6jq0w63" path="res://post space flight report.png" id="4_7hn4c"]
+
 [node name="Minigame5" type="Node2D" unique_id=2055810715]
+script = ExtResource("1_oyiys")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1054319721]
+offset_right = 1153.0
+offset_bottom = 649.0
+texture = ExtResource("1_b3dkm")
+
+[node name="Pre-Space flight report" type="TextureRect" parent="." unique_id=760072877]
+offset_left = 64.00001
+offset_top = -100.0
+offset_right = 604.0
+offset_bottom = 575.0
+scale = Vector2(0.8380422, 0.8436769)
+texture = ExtResource("2_1bf3g")
+
+[node name="normalvariationsstickynote" type="TextureRect" parent="." unique_id=2075631107]
+offset_left = 128.0
+offset_top = 297.0
+offset_right = 668.0
+offset_bottom = 972.0
+scale = Vector2(0.63831615, 0.6254832)
+texture = ExtResource("3_oyiys")
+
+[node name="post-space flight report" type="TextureRect" parent="." unique_id=1188654073]
+offset_left = 596.0
+offset_top = -96.0
+offset_right = 1136.0
+offset_bottom = 579.0
+scale = Vector2(0.89609927, 0.8528413)
+texture = ExtResource("4_7hn4c")
+
+[node name="NormalLevels" type="Button" parent="." unique_id=1431084237]
+offset_left = 587.0
+offset_top = 528.0
+offset_right = 818.0
+offset_bottom = 606.0
+theme_override_font_sizes/font_size = 28
+text = "NORMAL LEVELS
+"
+
+[node name="SHOULDTHIS ASTRONAUT BE EXAMINED FURTHER" type="RichTextLabel" parent="." unique_id=93198628]
+offset_left = 618.0
+offset_top = 416.0
+offset_right = 1130.0
+offset_bottom = 515.0
+theme_override_font_sizes/normal_font_size = 33
+text = "Are there ANY deviations in ANY of this astronaut's levels?"
+
+[node name="AbnormalLevels" type="Button" parent="." unique_id=968707445]
+offset_left = 864.0
+offset_top = 525.0
+offset_right = 1095.0
+offset_bottom = 603.0
+theme_override_font_sizes/font_size = 28
+text = "ABNORMAL LEVELS
+"
+
+[connection signal="pressed" from="NormalLevels" to="." method="_on_normal_levels_pressed"]
+[connection signal="pressed" from="AbnormalLevels" to="." method="_on_abnormal_levels_pressed"]
