@@ -1,4 +1,4 @@
-# aerospacegame
+# Global Student Aerospace Initiative's Aerospace Career Exploration Game (What's YOUR Flight Path)
 The Global Student Aerospace Initiative's Aerospace Career Exploration Game - This is a series of minigames where users learn about the various jobs you can go into in the aerospace field in a fun way by completing minigames that correspond to the careers.
 
 Quick snippets of the game:
