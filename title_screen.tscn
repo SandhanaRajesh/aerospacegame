@@ -15,10 +15,10 @@ texture = ExtResource("1_v6p8y")
 [node name="Title" type="RichTextLabel" parent="Background" unique_id=683768904]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 329.90692
-offset_top = 108.20495
-offset_right = 1647.8687
-offset_bottom = 261.35657
+offset_left = 336.57175
+offset_top = 136.5047
+offset_right = 1654.5334
+offset_bottom = 289.6563
 theme_override_colors/default_color = Color(0.6888452, 0.63053036, 3.85046e-07, 1)
 theme_override_colors/font_outline_color = Color(0.30451462, 0.2520633, 0.0365606, 0.96862745)
 theme_override_constants/outline_size = 10
@@ -28,10 +28,10 @@ text = "What's YOUR flight path?"
 [node name="TitleSecondLine" type="RichTextLabel" parent="Background" unique_id=72628623]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 54.98449
-offset_top = 264.68594
-offset_right = 1887.8009
-offset_bottom = 344.59116
+offset_left = 59.983078
+offset_top = 309.63263
+offset_right = 1892.7994
+offset_bottom = 389.53784
 theme_override_font_sizes/normal_font_size = 48
 text = "Explore career trajectories in the aerospace field that you've never heard of!"
 
@@ -39,9 +39,9 @@ text = "Explore career trajectories in the aerospace field that you've never hea
 layout_mode = 1
 anchors_preset = -1
 offset_left = 791.4434
-offset_top = 389.5378
+offset_top = 441.14328
 offset_right = 1167.4434
-offset_bottom = 820.693
+offset_bottom = 872.29846
 
 [node name="Start" type="Button" parent="Background/VBoxContainer" unique_id=344671683]
 layout_mode = 2
@@ -51,6 +51,7 @@ theme_override_font_sizes/font_size = 80
 text = "START"
 
 [node name="Settings" type="Button" parent="Background/VBoxContainer" unique_id=307316526]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.6901961, 0.6313726, 0, 1)
 theme_override_constants/outline_size = 40

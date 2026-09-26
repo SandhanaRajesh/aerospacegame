@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b4cm1xm8na34l"]
+
+[ext_resource type="Script" uid="uid://cyvpkjm7ur2uv" path="res://minigame_4_info_screen.gd" id="1_k7kk2"]
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_xd7fx"]
+
+[node name="Minigame4InfoScreen" type="Node2D" unique_id=2144467806]
+script = ExtResource("1_k7kk2")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=1706753762]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1722204231]
+offset_right = 960.0
+offset_bottom = 540.0
+scale = Vector2(1.201069, 1.2018212)
+texture = ExtResource("1_xd7fx")
+
+[node name="GotItButton" type="Button" parent="." unique_id=746415072]
+offset_left = 366.0
+offset_top = 510.0
+offset_right = 771.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "GOT IT!"
+
+[node name="MissionObjective" type="RichTextLabel" parent="." unique_id=632546048]
+offset_left = 352.0
+offset_top = 48.0
+offset_right = 864.0
+offset_bottom = 130.0
+theme_override_font_sizes/normal_font_size = 50
+text = "MISSION OBJECTIVE"
+
+[node name="AstronomerText" type="RichTextLabel" parent="." unique_id=2031161992]
+offset_left = 33.0
+offset_top = 139.0
+offset_right = 1123.0
+offset_bottom = 269.0
+theme_override_font_sizes/normal_font_size = 25
+text = "In this minigame, you will be an astronomer who has observed the constellation Orion. Click all of the main 8 stars that comprise the constellation in time!
+"
+
+[node name="CareerSpotlight" type="RichTextLabel" parent="." unique_id=1183292660]
+offset_left = 352.0
+offset_top = 250.0
+offset_right = 833.0
+offset_bottom = 332.0
+theme_override_font_sizes/normal_font_size = 50
+text = "CAREER SPOTLIGHT"
+
+[node name="AstronomerText2" type="RichTextLabel" parent="." unique_id=506928684]
+offset_left = 27.0
+offset_top = 338.0
+offset_right = 1139.0
+offset_bottom = 521.0
+theme_override_font_sizes/normal_font_size = 25
+text = "Astronomers are scientists who study phenomena in the universe outside Earth using observational data from telescopes, mathematical models, and physics calculations. They come into frequent contact with advanced astronomical technology and telescopes. They are skilled in data collection and analysis."
+
+[connection signal="pressed" from="GotItButton" to="." method="_on_got_it_button_pressed"]

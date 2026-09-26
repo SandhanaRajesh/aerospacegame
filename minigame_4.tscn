@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://cwuocp5bv8x"]
+
+[ext_resource type="Texture2D" uid="uid://dggt544aalj7r" path="res://Godot Stardance Aerospace Game Level Scene Background (1).png" id="1_80u0h"]
+[ext_resource type="Script" uid="uid://3ha6op27uesf" path="res://minigame_4.gd" id="1_pb0mu"]
+[ext_resource type="Texture2D" uid="uid://djlhfyy5cwax2" path="res://Journalist's Notes for Godot Minigame 3 (2).png" id="2_pb0mu"]
+[ext_resource type="Script" uid="uid://6561yubmv7mf" path="res://star_1.gd" id="4_wae4i"]
+[ext_resource type="Script" uid="uid://bmfo5446gm5x0" path="res://star_2.gd" id="5_yanj6"]
+[ext_resource type="Script" uid="uid://bk1qnc8wxd5ee" path="res://star_3.gd" id="6_41wkp"]
+[ext_resource type="Script" uid="uid://cd5p2544pbj6b" path="res://star_4.gd" id="7_gc28p"]
+[ext_resource type="Script" uid="uid://cjn4qq4yl73gm" path="res://star_5.gd" id="8_mf3ot"]
+[ext_resource type="Script" uid="uid://dc1mfqy5r8k26" path="res://star_6.gd" id="9_aco1f"]
+[ext_resource type="Script" uid="uid://drynyfbbmpyd5" path="res://star_7.gd" id="10_3f6md"]
+[ext_resource type="Script" uid="uid://d4clkfypxty6x" path="res://star_8.gd" id="11_jxcve"]
+[ext_resource type="PackedScene" uid="uid://0vt4jkcd2r1u" path="res://minigame_timer_scene.tscn" id="12_gc28p"]
+
+[node name="Minigame4" type="Node2D" unique_id=663083034]
+script = ExtResource("1_pb0mu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1326038138]
+offset_right = 1153.0
+offset_bottom = 649.0
+texture = ExtResource("1_80u0h")
+
+[node name="Star1" type="TextureButton" parent="." unique_id=1523443006]
+offset_left = 516.0
+offset_top = 9.0
+offset_right = 1056.0
+offset_bottom = 684.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("4_wae4i")
+
+[node name="Star2" type="TextureButton" parent="." unique_id=889285379]
+offset_left = 329.0
+offset_top = 93.99999
+offset_right = 869.0
+offset_bottom = 769.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("5_yanj6")
+
+[node name="Star3" type="TextureButton" parent="." unique_id=1455009174]
+offset_left = 675.0
+offset_top = 139.0
+offset_right = 1215.0
+offset_bottom = 814.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("6_41wkp")
+
+[node name="Star4" type="TextureButton" parent="." unique_id=1770785105]
+offset_left = 601.0
+offset_top = 290.0
+offset_right = 1141.0
+offset_bottom = 965.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("7_gc28p")
+
+[node name="Star5" type="TextureButton" parent="." unique_id=1849302865]
+offset_left = 495.0
+offset_top = 319.0
+offset_right = 1035.0
+offset_bottom = 994.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("8_mf3ot")
+
+[node name="Star6" type="TextureButton" parent="." unique_id=2072390577]
+offset_left = 398.0
+offset_top = 340.0
+offset_right = 938.0
+offset_bottom = 1015.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("9_aco1f")
+
+[node name="Star7" type="TextureButton" parent="." unique_id=1083389159]
+offset_left = 404.0
+offset_top = 595.0
+offset_right = 944.0
+offset_bottom = 1270.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("10_3f6md")
+
+[node name="Star8" type="TextureButton" parent="." unique_id=1644060342]
+offset_left = 690.0
+offset_top = 600.0
+offset_right = 1230.0
+offset_bottom = 1275.0
+scale = Vector2(0.079569004, 0.074267805)
+texture_normal = ExtResource("2_pb0mu")
+script = ExtResource("11_jxcve")
+
+[node name="ThemedTimer" parent="." unique_id=695340111 instance=ExtResource("12_gc28p")]
+
+[connection signal="pressed" from="Star1" to="Star1" method="_on_pressed"]
+[connection signal="pressed" from="Star2" to="Star2" method="_on_pressed"]
+[connection signal="pressed" from="Star3" to="Star3" method="_on_pressed"]
+[connection signal="pressed" from="Star4" to="Star4" method="_on_pressed"]
+[connection signal="pressed" from="Star5" to="Star5" method="_on_pressed"]
+[connection signal="pressed" from="Star6" to="Star6" method="_on_pressed"]
+[connection signal="pressed" from="Star7" to="Star7" method="_on_pressed"]
+[connection signal="pressed" from="Star8" to="Star8" method="_on_pressed"]
