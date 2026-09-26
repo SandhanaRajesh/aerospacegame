@@ -2,8 +2,10 @@
 The Global Student Aerospace Initiative's Aerospace Career Exploration Game - This is a series of minigames where users learn about the various jobs you can go into in the aerospace field in a fun way by completing minigames that correspond to the careers.
 
 Quick snippets of the game:
-<img width="572" height="368" alt="stardancedevloggodotgame2" src="https://github.com/user-attachments/assets/7b7f0ba2-2ebf-4405-891c-cdaf53126525" />
-<img width="1536" height="960" alt="stardancedevloggodotgame1" src="https://github.com/user-attachments/assets/6e56d628-ea22-4ed0-a0ab-3508bcf51a92" />
+
+<img width="500" height="321" alt="stardancedevloggodotgame2" src="https://github.com/user-attachments/assets/7b7f0ba2-2ebf-4405-891c-cdaf53126525" />
+
+<img width="500" height="312" alt="stardancedevloggodotgame1" src="https://github.com/user-attachments/assets/6e56d628-ea22-4ed0-a0ab-3508bcf51a92" />
 
 
 Try it out by opening this link!
